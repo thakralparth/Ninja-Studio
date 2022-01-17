@@ -209,17 +209,18 @@
 
 .genres1 .genre-sub .films
 {
-    position: absolute;
+    position:absolute;
     width: 100%;
     height: 100%;
     top: -2px;
-    z-index: 2;
+    /* z-index: 2; */
     border-radius: 50%;
 }
 
 .genres1 .genre-sub .film1 
 { 
     background-color:rgba(99, 110, 114, 0.5); 
+    
 }
 
 .genres1 .genre-sub .film2 
