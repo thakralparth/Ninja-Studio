@@ -1,0 +1,302 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+
+.footer
+{
+  color: darkgray;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 5%;
+  width: 100%;
+  background: black;
+  display: grid;
+  grid-template-columns: 2fr 3fr 5fr;
+  font-size: 20px;
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.footer .song-controls-1
+{
+  /*border: 2px solid white;*/
+  align-items: center;
+  justify-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footer .song-controls-1 img
+{
+  width: 40px;
+  height: 40px;
+  border-radius: 3px;
+}
+
+.footer .song-controls-2
+{
+  /*border: 2px solid white;*/
+  align-items: center;
+  justify-items: center;
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+}
+
+.footer .song-controls-2 .scrollbar
+{
+  position: relative;
+}
+
+.footer .song-controls-2 .scrollbar .scrollbar-1
+{
+  background: darkgray;
+  height: 10px;
+  width: 300px;
+  /*border: 2px solid white;*/
+  border-radius: 3px;
+}
+
+.footer .song-controls-2 .scrollbar .scrollbar-2
+{
+  position: absolute;
+  background: lightgreen;
+  height: 10px;
+  width: 150px;
+  /*border: 2px solid white;*/
+  border-radius: 3px;
+  top: 0;
+}
+
+.footer .song-controls-3
+{
+  /*border: 2px solid white;*/
+  align-items: center;
+  justify-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 2fr 1fr 2fr;
+}
+
+.footer .song-controls-3 .volume-bar
+{
+  position: relative;
+  justify-self: start;
+}
+
+.footer .song-controls-3 .volume-bar .volume-bar-1
+{
+  background: darkgray;
+  height: 10px;
+  width: 100px;
+  /*border: 2px solid white;*/
+  border-radius: 3px;
+}
+
+.footer .song-controls-3 .volume-bar .volume-bar-2
+{
+  position: absolute;
+  background: lightgreen;
+  height: 10px;
+  width: 50px;
+  /*border: 2px solid white;*/
+  border-radius: 3px;
+  top: 0;
+}
+
+@media screen and (max-width:450px) and (min-width:319px)
+{
+  .footer
+  {
+    height: 15%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    font-size: 15px;
+    grid-gap: 5px;
+    padding: 20px;
+  }
+  
+  .footer .song-controls-1
+  {
+    grid-template-columns: repeat(7, 1fr);
+  }
+
+  .footer .song-controls-2
+  {
+    grid-template-columns: 1fr 5fr 1fr 2fr;
+  }
+
+  .footer .song-controls-2 .scrollbar .scrollbar-1
+  {
+    width:150px;
+  }
+
+  .footer .song-controls-2 .scrollbar .scrollbar-2
+  {
+    width: 75px;
+  }
+
+  .footer .song-controls-3 .volume-bar .volume-bar-1
+  {
+    width: 60px;
+  }
+
+  .footer .song-controls-3 .volume-bar .volume-bar-2
+  {
+    width: 30px;
+  }
+
+  .footer .song-controls-3
+  {
+     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 2fr 1fr 2fr 1fr;
+  }
+
+
+  
+
+
+
+}
+
+
+@media screen and (max-width:770px) and (min-width:451px)
+{
+  .footer
+  {
+    height: 15%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    font-size: 15px;
+    grid-gap: 5px;
+    padding: 20px;
+  }
+
+  .footer .song-controls-1
+  {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .footer .song-controls-2
+  {
+    grid-template-columns: 1fr 5fr 1fr 1fr;
+  }
+
+  .footer .song-controls-3
+  {
+     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 2fr 1fr 2fr 1fr;
+  }
+
+ 
+
+  .footer .song-controls-2 .scrollbar .scrollbar-1
+  {
+    width:300px;
+  }
+
+  .footer .song-controls-2 .scrollbar .scrollbar-2
+  {
+    width: 150px;
+  }
+
+  
+
+}
+
+
+
+@media screen and (max-width:800px) and (min-width:771px)
+{
+  .footer
+  {
+    height: 15%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    font-size: 15px;
+    grid-gap: 5px;
+    padding: 10px;
+  }
+
+  .footer .song-controls-2
+  {
+    grid-template-columns: 1fr 7fr 1fr 1fr;
+  }
+
+  .footer .song-controls-2 .scrollbar .scrollbar-1
+  {
+    width:550px;
+  }
+
+  .footer .song-controls-2 .scrollbar .scrollbar-2
+  {
+    width: 420px;
+  }
+
+
+}
+
+@media screen and (max-width:1070px) and (min-width:801px)
+{
+  .footer
+  {
+    height: 8%;
+    font-size: 15px;
+    grid-gap: 10px;
+    padding: 10px;
+  }
+
+  .footer .song-controls-2 .scrollbar .scrollbar-1
+  {
+    width:150px;
+  }
+
+  .footer .song-controls-2 .scrollbar .scrollbar-2
+  {
+    width: 75px;
+  }
+
+  .footer .song-controls-3 .volume-bar .volume-bar-1
+  {
+    width: 60px;
+  }
+
+  .footer .song-controls-3 .volume-bar .volume-bar-2
+  {
+    width: 30px;
+  }
+}
+
+@media screen and (max-width:1280px) and (min-width:1071px) 
+{
+  .footer
+  {
+    height: 8%;
+    font-size: 15px;
+    grid-gap: 10px;
+    padding: 10px;
+  }
+
+  .footer .song-controls-2 .scrollbar .scrollbar-1
+  {
+    width:230px;
+  }
+
+  .footer .song-controls-2 .scrollbar .scrollbar-2
+  {
+    width: 115px;
+  }
+
+  .footer .song-controls-3 .volume-bar .volume-bar-1
+  {
+    width: 80px;
+  }
+
+  .footer .song-controls-3 .volume-bar .volume-bar-2
+  {
+    width: 40px;
+  }
+
+}
